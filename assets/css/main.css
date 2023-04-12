@@ -1,26 +1,80 @@
+.header {
+  background-color: var(--btn-gray);
+  padding: 0 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.logoAlura {
+  width: 26px;
+}
+
 .container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  padding: 40px 80px;
-  height: 100vh;
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* gap: 20px; */
 }
 
 .inputContainer {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
-.input textarea {
-  background-color: transparent;
-  /* border: none; */
+.input {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--dark-blue);
+}
+
+input {
+  /* background-color: transparent; */
+  border: none;
   height: 100%;
+  width: 100%;
   display: block;
 }
-.logoAlura {
-  align-self: flex-start;
-  margin-bottom: 80px;
+.botoesArea span {
+  font-size: 14px;
+}
+.botoes {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.btn {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 24px 0;
+  width: 250px;
+  border-radius: 24px;
+  border: 1px solid var(--dark-blue);
+  text-align: center;
+}
+
+.btn-blue {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  transition: ease-in-out 0.3s;
+}
+.btn-blue:hover {
+  background-color: var(--btn-gray);
+  color: var(--dark-blue);
+}
+.btn-gray {
+  background-color: var(--btn-gray);
+  color: var(--dark-blue);
+  transition: ease-in-out 0.3s;
+}
+
+.btn-gray:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 
 .telaContainer {
@@ -33,7 +87,7 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 32px;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .telaContainer img {
@@ -58,5 +112,8 @@
   .container {
     /* flex-direction: column; */
     flex-wrap: wrap;
+  }
+  .telaContainer img {
+    display: none;
   }
 }
