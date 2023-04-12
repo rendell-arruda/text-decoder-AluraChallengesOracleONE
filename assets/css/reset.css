@@ -4,16 +4,9 @@
   box-sizing: border-box;
 }
 
-html,
-body,
-#root {
-  height: 100%;
-}
-
 body {
-  font: 14px;
+  font: 16px;
   font-family: sans-serif;
-  background-color: #efefef;
 }
 
 a {

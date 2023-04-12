@@ -1,13 +1,16 @@
 body {
   font-family: 'Inter', sans-serif;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg);
 }
 
 :root {
   --bg: #e5e5e5;
   --white: #ffffff;
-  --btn-gray:#D8DFE8
-  --text-gray:#495057
+  --btn-gray: #d8dfe8;
+  --text-gray: #495057;
   --dark-blue: #0a3871;
 }
 
