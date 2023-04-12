@@ -16,61 +16,61 @@
 
   <body>
     <header class="header">
-      <img
-        src="./assets/img/logoAlura.png"
-        alt="Logo Alura"
-        class="logoAlura"
-      />
-    </header>
-    <main>
-      <div class="container">
-        <div class="inputContainer">
-          <div class="input">
-            <p>Digite aqui o seu texto..</p>
-            <input type="text" name="" id="" />
-          </div>
-          <div class="botoesArea">
-            <span
-              ><img src="./assets//img/exclamation-circle.svg" alt="" />Apenas
-              letras minúsculas e sem acento</span
-            >
-            <div class="botoes">
-              <button class="btn btn-blue">Criptografar</button>
-              <button class="btn btn-gray">Descriptografar</button>
-            </div>
-          </div>
-        </div>
-        <div class="telaContainer">
-          <div class="resultado"></div>
-          <img src="./assets/img/imgPrincipal.svg" alt="" />
-          <div class="conteudo">
-            <p><b>Nenhuma mensagem encontrada</b></p>
-            <span>
-              Digite um texto que você deseja criptografar ou descriptografar
-            </span>
-          </div>
-        </div>
+      <div class="header-conteudo">
+        <img
+          src="./assets/img/logoAlura.png"
+          alt="Logo Alura"
+          class="logoAlura"
+        />
+        <h1>Text Decoder</h1>
       </div>
-      <div class="footer">
-        <div>
-          <p>© 2023 RLC Arruda. All Rights Reserved.</p>
+    </header>
+    <main class="container">
+      <form class="form">
+        <p>Digite seu texto abaixo</p>
+        <textarea class="textarea"> </textarea>
+        <label class="label"
+          ><img src="./assets//img/exclamation-circle.svg" alt="" />Apenas
+          letras minúsculas e sem acento
+        </label>
+        <div class="form__buttons">
+          <button class="btn btn-blue">Criptografar</button>
+          <button class="btn btn-gray">Descriptografar</button>
         </div>
-        <div class="redes">
-          <ul class="redes-list">
-            <li>
-              <a href="https://www.linkedin.com/in/rendell-arruda/"
-                ><img src="https://img.icons8.com/color/48/null/linkedin.png"
-              /></a>
-            </li>
-            <li>
-              <a href="https://github.com/rendell-arruda"
-                ><img
-                  src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/36/null/external-github-community-for-software-building-and-testing-online-logo-bold-tal-revivo.png"
-              /></a>
-            </li>
-          </ul>
+      </form>
+
+      <div class="result-container">
+        <div class="no-result">
+          <img
+            src="./assets/img/imgPrincipal.svg"
+            alt="humano com roupa azul procurando por um diamante"
+          />
+          <h2>Nenhuma mensagem encontrada</h2>
+          <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        </div>
+        <div class="result">
+          <p class="result__text" disable></p>
+          <!-- <button id="btn-copy" class="btn">Copiar</button> -->
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <p>© 2023 RLC Arruda. All Rights Reserved.</p>
+      <div class="redes">
+        <ul class="redes-list">
+          <li>
+            <a href="https://www.linkedin.com/in/rendell-arruda/"
+              ><img src="https://img.icons8.com/color/48/null/linkedin.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/rendell-arruda"
+              ><img
+                src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/36/null/external-github-community-for-software-building-and-testing-online-logo-bold-tal-revivo.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
