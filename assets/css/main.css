@@ -3,16 +3,24 @@
   justify-content: space-around;
   gap: 20px;
   padding: 40px 80px;
+  height: 100vh;
 }
 
 .inputContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-.inputContainer img {
+.input textarea {
+  background-color: transparent;
+  /* border: none; */
+  height: 100%;
+  display: block;
+}
+.logoAlura {
   align-self: flex-start;
+  margin-bottom: 80px;
 }
 
 .telaContainer {
@@ -22,9 +30,14 @@
   width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   border-radius: 32px;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.telaContainer img {
+  width: 330px;
 }
 
 .telaContainer .conteudo {
@@ -39,4 +52,11 @@
 .conteudo span {
   font-size: 16px;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .container {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
 }
