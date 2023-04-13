@@ -35,22 +35,12 @@
           letras minúsculas e sem acento
         </label>
         <div class="form__buttons" id="form-buttons">
-          <button
-            class="btn btn-blue"
-            id="btn-encrypt"
-            type="submit"
-            onclick="encrypt()"
-          >
+          <a class="btn btn-blue" id="btn-encrypt" onclick="encrypt()">
             Criptografar
-          </button>
-          <button
-            class="btn btn-gray"
-            id="btn-decrypt"
-            type="submit"
-            onclick="decrypt()"
-          >
+          </a>
+          <a class="btn btn-gray" id="btn-decrypt" onclick="decrypt()">
             Descriptografar
-          </button>
+          </a>
         </div>
       </form>
 
@@ -64,7 +54,7 @@
           <p>Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
         <div class="result" id="result">
-          <p class="result__text" id="result__text" disable></p>
+          <p class="result__text" id="result__text">ResultTeste</p>
           <!-- <button id="btn-copy" class="btn">Copiar</button> -->
         </div>
       </div>

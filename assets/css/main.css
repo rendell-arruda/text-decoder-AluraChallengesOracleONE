@@ -98,13 +98,13 @@
   height: 100%;
 }
 
-.result-container .no-result.inative {
+/* .result-container .no-result.inative {
   display: none;
 }
 .result-container .no-result .no-result__image {
   width: 100%;
-}
-.result-container .result {
+} */
+.result__text {
   display: none;
 }
 
@@ -145,22 +145,6 @@
     max-width: initial;
     background-color: white;
     border-radius: 2rem;
-  }
-
-  .result-container .no-result {
-    gap: 1rem;
-  }
-
-  .result-container .no-result .no-result__image {
-    display: none;
-  }
-
-  .result-container .no-result .no-result__title {
-    font-size: 1.2rem;
-  }
-
-  .result-container .no-result .no-result__text {
-    font-size: 0.9rem;
   }
 
   /* RESULT END */
