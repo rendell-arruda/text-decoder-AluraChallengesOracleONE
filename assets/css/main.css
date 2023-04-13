@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 1.2fr;
   gap: 2rem;
-  height: calc(100% - 5rem);
+  /* height: calc(100% - 8rem); */
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -59,11 +59,14 @@
   color: var(--dark-blue);
   font-size: 2rem;
   /* background-color: transparent; */
-  resize: none;
+  /* resize: none; */
 }
 
-.form .form__buttons .btn {
-  flex: 1;
+.form__buttons {
+  display: flex;
+  gap: 20px;
+
+  justify-content: space-around;
 }
 
 @media (max-width: 768px) {
@@ -83,7 +86,7 @@
   padding: 2rem;
   border-radius: 2rem;
   box-shadow: 5px 5px 15px #0002;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 
 .result-container .no-result {
@@ -104,6 +107,7 @@
 .result-container .result {
   display: none;
 }
+
 @media (max-width: 1200px) {
   .container {
     display: grid;

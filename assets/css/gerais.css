@@ -1,6 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg);
+  height: calc(100%-8rem);
 }
 
 :root {
@@ -11,13 +12,3 @@ body {
   --text-gray: #495057;
   --dark-blue: #0a3871;
 }
-
-/* alternativo
-:root {
-    --bg: #101827;
-    --white: #ffffff;
-    --btn-gray:#1A56DB
-    --text-gray:#374151
-    --dark-blue: #1F2937
-  }
-   */
