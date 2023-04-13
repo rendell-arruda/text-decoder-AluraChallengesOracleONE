@@ -28,19 +28,34 @@
     <main class="container">
       <form class="form">
         <p>Digite seu texto abaixo</p>
-        <textarea class="textarea"> </textarea>
+        <textarea class="textarea" id="textarea"> </textarea>
+        <!-- <input type="text" id="textarea" /> -->
         <label class="label"
           ><img src="./assets//img/exclamation-circle.svg" alt="" />Apenas
           letras minúsculas e sem acento
         </label>
-        <div class="form__buttons">
-          <button class="btn btn-blue">Criptografar</button>
-          <button class="btn btn-gray">Descriptografar</button>
+        <div class="form__buttons" id="form-buttons">
+          <button
+            class="btn btn-blue"
+            id="btn-encrypt"
+            type="submit"
+            onclick="encrypt()"
+          >
+            Criptografar
+          </button>
+          <button
+            class="btn btn-gray"
+            id="btn-decrypt"
+            type="submit"
+            onclick="decrypt()"
+          >
+            Descriptografar
+          </button>
         </div>
       </form>
 
       <div class="result-container">
-        <div class="no-result">
+        <div class="no-result" id="no-result">
           <img
             src="./assets/img/imgPrincipal.svg"
             alt="humano com roupa azul procurando por um diamante"
@@ -48,14 +63,14 @@
           <h2>Nenhuma mensagem encontrada</h2>
           <p>Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
-        <div class="result">
-          <p class="result__text" disable></p>
+        <div class="result" id="result">
+          <p class="result__text" id="result__text" disable></p>
           <!-- <button id="btn-copy" class="btn">Copiar</button> -->
         </div>
       </div>
     </main>
     <footer class="footer">
-      <p>© 2023 RLC Arruda. All Rights Reserved.</p>
+      <p>&copy; 2023 RLC Arruda. All Rights Reserved.</p>
       <div class="redes">
         <ul class="redes-list">
           <li>
@@ -72,5 +87,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
