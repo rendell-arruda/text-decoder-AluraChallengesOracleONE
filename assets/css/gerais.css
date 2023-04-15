@@ -1,7 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg);
-  height: calc(100%-8rem);
+  /* height: calc(100%-8rem); */
 }
 
 :root {
