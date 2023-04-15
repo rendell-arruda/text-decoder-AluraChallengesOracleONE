@@ -20,7 +20,7 @@ function encrypt() {
     resultText.innerHTML = textArea.value;
 
     //faz a div resultado e o botão aparecer
-    resultDiv.style.display = 'block';
+    resultDiv.style.textAlign = 'start';
     resultText.style.display = 'block';
     btnCopy.style.display = 'block';
   }
