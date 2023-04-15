@@ -35,6 +35,11 @@
   color: var(--dark-blue);
   transition: ease-in-out 0.3s;
 }
+.btn-light {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  transition: ease-in-out 0.3s;
+}
 
 .btn-gray:hover {
   background-color: var(--dark-blue);
