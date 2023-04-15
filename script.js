@@ -1,4 +1,5 @@
-var frase = document.getElementById('textarea').value.toLowerCase;
+var frase = document.getElementById('textarea');
+
 var btnEncrypt = document.querySelector('#btn-encrypt');
 var btnDecrypt = document.querySelector('#btn-decrypt');
 var btnCopy = document.querySelector('#btn-copy');
@@ -9,49 +10,59 @@ var resultText = document.querySelector('#result__text');
 btnEncrypt.onclick = encrypt;
 // btnDecrypt.onclick = decrypt;
 
-function analisaTexto(texto) {
-  let encryptedText = '';
+// function analisaTexto(texto) {
+//   let encryptedText = '';
 
-  for (let i = 0; i < texto.length; i++) {
-    switch (texto[1]) {
-      case 'a':
-        encryptedText += 'ai';
-        break;
-    }
-  }
+//   for (let i = 0; i < texto.length; i++) {
+//     switch (texto[1]) {
+//       case 'a':
+//         encryptedText += 'ai';
+//         break;
+//     }
+//   }
 
-  return encryptedText;
-}
+//   return encryptedText;
+// }
 
-//-----------------------TEST
+/*-----------------------TEST
 function encripta() {
   var textoEncriptado = frase.replace(/e/gim, 'enter');
-  var textoEncriptado = frase.replace(/i/gim, 'imes');
-  var textoEncriptado = frase.replace(/a/gim, 'ai');
-  var textoEncriptado = frase.replace(/o/gim, 'ober');
-  var textoEncriptado = frase.replace(/u/gim, 'ufat');
-}
+  var textoEncriptado = textoEncriptado.replace(/i/gim, 'imes');
+  var textoEncriptado = textoEncriptado.replace(/a/gim, 'ai');
+  var textoEncriptado = textoEncriptado.replace(/o/gim, 'ober');
+  var textoEncriptado = textoEncriptado.replace(/u/gim, 'ufat');
+
+  resultText.innerHTML = textoEncriptado;
+}*/
 //-----------------------TEST
 
-function encrypt(encryptedText) {
-  if (frase.value === ' ') {
+function encrypt() {
+  console.log(frase.value);
+  if (textarea.value === ' ') {
     alert('Digite uma palavra');
   } else {
-    analisaTexto(frase.value);
-    console.log(encryptedText);
+    // analisaTexto(frase.value);
+    // console.log(encryptedText);
+
+    var textoEncriptado = frase.value.toLowerCase().replace(/e/gim, 'enter');
+    var textoEncriptado = textoEncriptado.replace(/i/gim, 'imes');
+    var textoEncriptado = textoEncriptado.replace(/a/gim, 'ai');
+    var textoEncriptado = textoEncriptado.replace(/o/gim, 'ober');
+    var textoEncriptado = textoEncriptado.replace(/u/gim, 'ufat');
+
     // tira img do card resultado
     noResult.style.display = 'none';
 
-    // coloca o texto inserido no campo do resultado
-    resultText.innerHTML = frase.value;
-
     //faz a div resultado e o botão aparecer
     resultDiv.style.textAlign = 'start';
+    resultText.innerHTML = textoEncriptado;
     resultText.style.display = 'block';
     btnCopy.style.display = 'block';
+
+    // coloca o texto inserido no campo do resultado
   }
 }
 
-function decrypt() {
-  // alert(frase.value);
-}
+// function decrypt() {
+//   // alert(frase.value);
+// }
