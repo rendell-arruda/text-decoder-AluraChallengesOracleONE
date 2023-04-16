@@ -1,14 +1,16 @@
-var frase = document.getElementById('textarea');
-
 var btnEncrypt = document.querySelector('#btn-encrypt');
 var btnDecrypt = document.querySelector('#btn-decrypt');
 var btnCopy = document.querySelector('#btn-copy');
+
+var frase = document.getElementById('textarea');
 var noResult = document.querySelector('#no-result');
 var resultDiv = document.querySelector('#result');
 var resultText = document.querySelector('#result__text');
+
 let isValidated = true;
 
 btnEncrypt.onclick = encrypt;
+btnDecrypt.onclick = decrypt;
 
 function validity() {
   if (textarea.value === ' ') {
@@ -45,5 +47,22 @@ function encrypt() {
 }
 
 function decrypt() {
-  // alert(frase.value);
+  validity();
+
+  if (isValidated) {
+    var textoEncriptado = frase.value.toLowerCase().replace(/enter/gim, 'e');
+    var textoEncriptado = textoEncriptado.replace(/imes/gim, 'i');
+    var textoEncriptado = textoEncriptado.replace(/ai/gim, 'a');
+    var textoEncriptado = textoEncriptado.replace(/ober/gim, 'o');
+    var textoEncriptado = textoEncriptado.replace(/ufat/gim, 'u');
+
+    // tira img do card resultado
+    limpaTela();
+    resultText.innerHTML = textoEncriptado;
+  }
+}
+
+function copy() {
+  resultText.select();
+  console.log(document.execCommand('copy'));
 }
