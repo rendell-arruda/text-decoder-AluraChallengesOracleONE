@@ -1,5 +1,6 @@
 # Decodificador de Texto
 
+
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 <!-- ![GitHub repo size](https://img.shields.io/github/repo-size/rendell-arruda/README-template?style=for-the-badge)
@@ -12,6 +13,8 @@
 
 > O projeto é um decodificador de palavras e é resultado do primeiro desafio do Alura Challenges Oracle ONE.
 
+### Tecnologias envolvidas
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
