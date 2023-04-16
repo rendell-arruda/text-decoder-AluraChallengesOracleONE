@@ -1,6 +1,7 @@
 # Decodificador de Texto
 
 
+
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 <!-- ![GitHub repo size](https://img.shields.io/github/repo-size/rendell-arruda/README-template?style=for-the-badge)
@@ -63,6 +64,10 @@ Caso queira descriptografar uma mensagem que recebeu:
 1. Cole a mensagem no campo de texto;
 2. Clique em <b>Descriptograr</b> 
 3.  3. Confira o resultado no card ao lado.
+
+## 🏆 Badge Earn:
+<img src="./badgetProjeto1.png" alt="Prêmio do projeto">
+
 ## 📫 Contribuindo para Decodificador
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
 Para contribuir com projeto, siga estas etapas:
@@ -116,3 +121,4 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <!-- ## 📝 Licença
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes. -->
+
