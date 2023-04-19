@@ -29,7 +29,7 @@ function limpaTela() {
 }
 
 function encrypt() {
-  console.log(frase.value);
+  // console.log(frase.value);
   validity();
   if (isValidated) {
     var textoEncriptado = frase.value.toLowerCase().replace(/e/gim, 'enter');
@@ -63,6 +63,8 @@ function decrypt() {
 }
 
 function copy() {
-  resultText.select();
-  console.log(document.execCommand('copy'));
+  // resultText.select();
+  // document.execCommand('copy');
+  let resultado = document.getElementById('result__text');
+  navigator.clipboard.writeText(resultText.innerHTML);
 }
