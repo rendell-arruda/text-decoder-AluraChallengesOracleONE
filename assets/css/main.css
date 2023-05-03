@@ -2,12 +2,13 @@
   display: grid;
   grid-template-columns: 2fr 1.2fr;
   gap: 2rem;
-  height: calc(100vh - 5rem);
+  /* height: calc(100vh - 7em); */
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 1.5rem 0;
 }
+
 /* BOTAO */
 
 .btn {
@@ -26,15 +27,18 @@
   color: var(--white);
   transition: ease-in-out 0.3s;
 }
+
 .btn-blue:hover {
   background-color: var(--btn-gray);
   color: var(--dark-blue);
 }
+
 .btn-gray {
   background-color: var(--btn-gray);
   color: var(--dark-blue);
   transition: ease-in-out 0.3s;
 }
+
 .btn-light {
   background-color: var(--white);
   color: var(--dark-blue);
@@ -97,6 +101,7 @@
   height: 100%;
   text-align: center;
 }
+
 .result {
   display: flex;
   align-items: center;
@@ -105,6 +110,7 @@
   height: 100%;
   gap: 20px;
 }
+
 .result__text,
 #btn-copy {
   display: none;

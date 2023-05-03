@@ -2,7 +2,7 @@ var btnEncrypt = document.querySelector('#btn-encrypt');
 var btnDecrypt = document.querySelector('#btn-decrypt');
 var btnCopy = document.querySelector('#btn-copy');
 
-var frase = document.getElementById('textarea');
+var frase = document.getElementById('textarea')
 var noResult = document.querySelector('#no-result');
 var resultDiv = document.querySelector('#result');
 var resultText = document.querySelector('#result__text');
