@@ -114,7 +114,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 </table>
 
  -->
-#### 😄 Seja um contribuidores<br>
+#### 😄 Seja um contribuidor<br>
 
 <!-- Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir. -->
 
